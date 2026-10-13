@@ -1,0 +1,1 @@
+r2 nft insert rule inet filter forward iif "r2-eth0" ip saddr { 10.1.0.0/24, 10.12.0.0/24 } drop

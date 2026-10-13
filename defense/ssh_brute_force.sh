@@ -1,0 +1,2 @@
+r2 nft insert rule inet filter forward tcp dport 22 ct state new meter ssh_meter { ip saddr timeout 60s limit rate over 5/minute } drop
+r2 nft insert rule inet filter forward tcp dport 21 ct state new meter ftp_meter { ip saddr timeout 60s limit rate over 5/minute } drop

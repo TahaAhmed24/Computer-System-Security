@@ -1,0 +1,1 @@
+r2 nft insert rule inet filter forward tcp flags syn ct state new meter syn_flood { ip saddr timeout 60s limit rate over 5/minute } drop
